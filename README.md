@@ -9,6 +9,9 @@ The catalog is automatically refreshed **every month** using GitHub Actions, ens
 
 ---
 
+## Catalog
+Just download generated.pdf. It is automatically recreated every month
+
 ## Requirements
 
 - Python 3.12+ (previous versions will most likely also work)
@@ -19,7 +22,7 @@ The catalog is automatically refreshed **every month** using GitHub Actions, ens
 
 ---
 
-## Usage
+## Build yourself
 
 #### 1. Clone the repository:
 
@@ -42,8 +45,6 @@ python main.py
 ```bash
 pdflatex -interaction=nonstopmode generated.tex
 ```
-
-#### 5. Open generated.pdf to view the catalog.
 
 ## License
 
