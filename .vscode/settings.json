@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.log": true,
+        "*.synctex.gz": true,
+        "**/*.glo": true,
+        "**/*.glsdefs": true,
+        "**/*.ist": true,
+        "**/*.out": true,
+        "**/*.bbl": true,
+        "**/*.glg": true,
+        "**/*.gls": true,
+        "**/*.toc": true
+    }
+}

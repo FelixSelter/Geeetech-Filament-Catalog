@@ -1,0 +1,5 @@
+images/
+*.aux
+*.log
+*.synctex.gz
+template.pdf
