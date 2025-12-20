@@ -16,7 +16,6 @@ The catalog is automatically refreshed **every month** using GitHub Actions, ens
   - `requests`
   - `beautifulsoup4`
 - LaTeX installation (TeX Live recommended with `latex-extra` packages)
-- GitHub Actions (for automatic monthly refresh)
 
 ---
 
