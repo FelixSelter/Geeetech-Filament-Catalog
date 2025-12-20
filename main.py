@@ -59,10 +59,13 @@ for filament, url in urls.items():
 
         if filament not in results:
             results[filament] = []
-        name = name.replace(' 3D printer Filament 1.75mm 1kg/roll', '')
-        name = name.replace('  3D Printer Filament 1.75mm 1kg/roll', '')
-        name = name.replace(' 3D Printer Filament 1.75mm 1kg/roll', '')
-        name = name.replace(' 3D Printer Filament  1.75mm 1kg/roll', '')
+        name = name.replace(' 3D Printer Filament 1.75mm 1kg/roll', '') # Default case
+        name = name.replace(' 3D printer Filament 1.75mm 1kg/roll', '') # lowercase printer
+        name = name.replace('  3D Printer Filament 1.75mm 1kg/roll', '') # double space before 3D
+        name = name.replace(' 3D Printer Filament  1.75mm 1kg/roll', '') # double space before 1.75mm
+        name = name.replace(' 3D Printer Filament 1.75mm 1KG/Roll', '') # uppercase KG/Roll
+        name = name.replace(' 3D Printer Filament 1.75mm 1kg/rol', '') # Missing l on roll
+        name = name.replace(' 3D Printer Filament 1.75mm', '') # PLA Shiny Silk 0.5kg/roll
         results[filament].append(SUBFIGURE_TEMPLATE.replace("FILE_PATH", str(file_path)).replace("CAPTION", name))
 
 with open("template.tex", "r") as f:
