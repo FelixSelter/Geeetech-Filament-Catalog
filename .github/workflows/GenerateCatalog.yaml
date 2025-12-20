@@ -45,4 +45,3 @@ jobs:
           generated.pdf
           generated.tex
         branch: main
-        github_token: ${{ secrets.GITHUB_TOKEN }}
