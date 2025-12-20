@@ -38,4 +38,8 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "Update generated.pdf"
-        file_pattern: "generated.pdf"
+        file_pattern: |
+          generated.pdf
+          generated.tex
+        branch: main
+        github_token: ${{ secrets.GITHUB_TOKEN }}
